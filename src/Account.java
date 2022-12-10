@@ -13,7 +13,7 @@ public abstract class Account implements InterestRate{
        this.name = name;
        this.SSN = SSN;
        balance = initDeposit;
-        System.out.println("Name: " + name + " " + "SSN: " + SSN + " " + "Balance: $" + balance);
+      //  System.out.println("Name: " + name + " " + "SSN: " + SSN + " " + "Balance: $" + balance);
 
         //Set account number
         index++;
@@ -26,6 +26,14 @@ public abstract class Account implements InterestRate{
         return lastTwoOfSSN + uniqueID + randomNumber;
     }
     // list common methods
+
+    public void showInfo(){
+        System.out.println(
+                "Name: " + name +
+                        "\nAccount Number: " + accountNumber +
+                        "\nBalance: " + balance
+        );
+    }
 
 
 }
