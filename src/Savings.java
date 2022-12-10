@@ -8,9 +8,10 @@ public class Savings extends Account{
         super(name, SSN,initDeposit);
         accountNumber = "1" + accountNumber;
         setSafetyDepositBox();
-        // System.out.println("Account Number " + this.accountNumber);
-        // System.out.println("New Savings Account");
-        // System.out.println(name);
+    }
+
+    public void setRate(){
+        rate = getBaseRate() - .25;
     }
 
     private void setSafetyDepositBox() {
